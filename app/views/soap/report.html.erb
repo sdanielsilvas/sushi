@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="row">
+		<div class = "col-md-8 col-md-offset-2">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Plataforma</th>
+						<th>Editor</th>
+						<th>Nombre</th>
+						<th>Contador</th>
+					</tr>
+				</thead>
+				<tbody>
+					<%@report.each do |r|%>
+					<tr>
+						<td><%=r[:item_platform]%></td>
+						<td><%=r[:item_publisher]%></td>
+						<td><%=r[:item_name]%></td>
+						<td><%=r[:count]%></td>
+					</tr>
+					<%end%>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+<div class="container">
+	<div style="margin:300px; margin-top: 50px; padding: 10px;">
+		<div class="row">
+			<div class="form-group">
+				<label for="email">Que reporte desea:</label>
+				<%= form_tag reports_path, method: :get do%>
+				<%=select_tag "reports", "<option value='BR2'>Book Report 2</option><option value='JR1'>Journal Report 1</option>".html_safe,{ :class => 'form-control' }%> <br>
+				<%= submit_tag "Obtener Reporte", class:"btn btn-success" %>
+				<%end%>
+			</div>
+		</div>
+	</div>
+</div>
+
